@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Commande</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-GLhlTQ8iK7l5lOpI5IBDIKS9PsfkDf2tcDh69/uF2JbIq1FkGJ2jz2IfQ+JwL4" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Rufina:400,700" rel="stylesheet">
+
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- title of site -->
+    <title>AutoShop</title>
+
+    <!-- For favicon png -->
+    <link rel="shortcut icon" type="image/icon" href="assets/logo/favicon.png" />
+
+    <!--font-awesome.min.css-->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+    <!--linear icon css-->
+    <link rel="stylesheet" href="assets/css/linearicons.css">
+
+    <!--flaticon.css-->
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+
+    <!--animate.css-->
+    <link rel="stylesheet" href="assets/css/animate.css">
+
+    <!--owl.carousel.css-->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+
+    <!--bootstrap.min.css-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- bootsnav -->
+    <link rel="stylesheet" href="assets/css/bootsnav.css">
+
+    <!--style.css-->
+    <link rel="stylesheet" href="assets/css/style copy.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .row {
+            display: -ms-flexbox;
+            /* IE10 */
+            display: flex;
+            -ms-flex-wrap: wrap;
+            /* IE10 */
+            flex-wrap: wrap;
+            margin: 0 -16px;
+        }
+
+        .col-25 {
+            -ms-flex: 25%;
+            /* IE10 */
+            flex: 25%;
+        }
+
+        .col-50 {
+            -ms-flex: 50%;
+            /* IE10 */
+            flex: 50%;
+        }
+
+        .col-75 {
+            -ms-flex: 75%;
+            /* IE10 */
+            flex: 75%;
+        }
+
+        .col-25,
+        .col-50,
+        .col-75 {
+            padding: 0 16px;
+        }
+
+        .container1 {
+            background-color: white;
+            padding: 20px 20px 15px 20px;
+            border: 1px solid lightgrey;
+            border-radius: 3px;
+        }
+
+        input[type=text] {
+            width: 100%;
+            margin-bottom: 20px;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        label {
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .icon-container {
+            margin-bottom: 20px;
+            padding: 7px 0;
+            font-size: 24px;
+        }
+
+        .btn {
+            background-color: #1a068dd9;
+            color: white;
+            padding: 12px;
+            margin: 10px 0;
+            border: none;
+            width: 100%;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 17px;
+        }
+
+        .btn:hover {
+            background-color: #2337C6;
+            color: white;
+        }
+
+        a {
+            color: #2196F3;
+        }
+
+        hr {
+            border: 1px solid lightgrey;
+        }
+
+        span.price {
+            float: right;
+            color: grey;
+        }
+
+        /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+        @media (max-width: 800px) {
+            .row {
+                flex-direction: column-reverse;
+            }
+
+            .col-25 {
+                margin-bottom: 20px;
+            }
+        }
+        h3 {
+    color: #012970; 
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="header-area">
+        <nav class="navbar navbar-default bootsnav  navbar-scrollspy" data-minus-value-desktop="70"
+            data-minus-value-mobile="55" data-speed="1000" style="background-color: #1d027dc1; height: 80px; ">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a href="index.html"> <img src="assets/images/brand/AUT__3_-removebg-preview.png" alt=""></a>
+                </div>
+                <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
+                    <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+                        <li class="scroll active" style="margin-top: -15px;"><a href="#home">Acceuil</a></li>
+                        <li class="scroll active"><a href="#Produits" style="margin-top: -15px;">Produits</a></li>
+                        <li><a href="ajouterPanier.php" style="margin-top: -15px;">Panier</a></li>
+                        <li><a href="login.html" style="margin-top: -15px;">Mon compte</a></li>
+                        <li><a href="contact.html" style="margin-top: -15px;">contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <section>
+        <div class="container1" style="margin-top: 110px;margin-left: 150px;margin-right: 150px;">
+            <form action="commande.php" method="post">
+                <div class="row">
+                    <div class="col-50">
+                        <h3>Commande</h3>
+                        <label for="nom"><i class="fa fa-user"></i> Nom</label>
+                        <input type="text" id="nom" name="nom">
+                        <label for="prenom"><i class="fa fa-user"></i> Prénom</label>
+                        <input type="text" id="prenom" name="prenom">
+                        <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                        <input type="text" id="email" name="email">
+                        <label for="telephone"><i class="fa fa-user"></i> Téléphone</label>
+                        <input type="text" id="telephone" name="telephone">
+                        <label for="adresse"><i class="fa fa-address-card-o"></i> Adresse</label>
+                        <input type="text" id="adresse" name="adresse">
+                        <label for="pays"><i class="fa fa-institution"></i> Pays</label>
+                        <input type="text" id="pays" name="pays">
+                        <div class="row">
+                            <div class="col-50">
+                                <label for="ville">Ville</label>
+                                <input type="text" id="ville" name="ville">
+                            </div>
+                            <div class="col-50">
+                                <label for="codePostal">Code Postal</label>
+                                <input type="text" id="codePostal" name="codePostal">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-50">
+                        <h3>Paiement</h3>
+
+                        <label for="fname">Cartes accepté</label>
+                        <div class="icon-container">
+                            <i class="fa fa-cc-visa" style="color:navy;"></i>
+                        </div>
+
+                        <label for="mode">Mode paiement :</label>
+                        <div>
+                            <input type="radio" id="paiementCarte" name="modePaiement" value="carte" checked>
+                            <label for="paiementCarte">Paiement par carte</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="paiementEspece" name="modePaiement" value="espece">
+                            <label for="paiementEspece">Paiement en espèces</label>
+                        </div>
+
+                        <div id="carteFields">
+                            <label for="nomCarte">Nom sur la carte</label>
+                            <input type="text" id="nomCarte" name="nomCarte">
+                            <label for="numCarte">Numéro de la carte</label>
+                            <input type="text" id="numCarte" name="numCarte">
+                            <label for="codeCarte">Code de la carte</label>
+                            <input type="text" id="codeCarte" name="codeCarte">
+                        </div>
+                    </div>
+                </div>
+                <input type="submit" value="Commander" class="btn">
+            </form>
+        </div>
+    </section>
+    <script>
+        // JavaScript code to show/hide card fields based on selected payment mode
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get the payment mode radio buttons
+            var paiementCarte = document.getElementById('paiementCarte');
+            var paiementEspece = document.getElementById('paiementEspece');
+
+            // Get the card fields div
+            var carteFields = document.getElementById('carteFields');
+
+            // Show/hide card fields based on selected payment mode
+            paiementCarte.addEventListener('change', function () {
+                carteFields.style.display = paiementCarte.checked ? 'block' : 'none';
+            });
+
+            paiementEspece.addEventListener('change', function () {
+                carteFields.style.display = paiementCarte.checked ? 'block' : 'none';
+            });
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,548 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+	<!-- meta data -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+	<!--font-family-->
+	<link
+		href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+		rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Rufina:400,700" rel="stylesheet">
+
+	<!-- title of site -->
+	<title>AutoShop</title>
+ 
+	<!-- For favicon png -->
+	<link rel="shortcut icon" type="image/icon" href="assets/logo/favicon.png" />
+
+	<!--font-awesome.min.css-->
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+	<!--linear icon css-->
+	<link rel="stylesheet" href="assets/css/linearicons.css">
+
+	<!--flaticon.css-->
+	<link rel="stylesheet" href="assets/css/flaticon.css">
+
+	<!--animate.css-->
+	<link rel="stylesheet" href="assets/css/animate.css">
+
+	<!--owl.carousel.css-->
+	<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+
+	<!--bootstrap.min.css-->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+	<!-- bootsnav -->
+	<link rel="stylesheet" href="assets/css/bootsnav.css">
+
+	<!--style.css-->
+	<link rel="stylesheet" href="assets/css/style.css">
+
+	<!--responsive.css-->
+	<link rel="stylesheet" href="assets/css/responsive.css">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+
+	<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+</head>
+
+<body>
+	<!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+	<!--welcome-hero start -->
+	<section id="home" class="welcome-hero">
+
+		<!-- top-area Start -->
+		<div class="top-area">
+			<div class="header-area">
+				<!-- Start Navigation -->
+				<nav class="navbar navbar-default bootsnav  navbar-sticky navbar-scrollspy"
+					data-minus-value-desktop="70" data-minus-value-mobile="55" data-speed="1000">
+
+					<div class="container">
+
+						<div class="navbar-header">
+							<div class="row">
+								<div class="col-xs-2">
+									<a href="index.html"><img src="assets/images/brand/AUT__3_-removebg-preview.png" alt=""></a>
+								</div>
+								<div class="col-xs-10">
+									<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+										<i class="fa fa-bars"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+								<i class="fa fa-bars"></i>
+							</button>
+							<a class="navbar-brand" href="index.html">Auto Shop<span></span></a>
+						</div>
+						
+						
+						
+
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
+							<ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp" >
+								<li class=" scroll active" ><a href="#home">Acceuil</a></li>
+								<li class=" scroll active"><a href="#Produits" >Catégories</a></li>
+								<li class="scroll"><a href="ajouterPanier.php">panier</a></li>
+								<li><a href="login.html">Mon compte</a></li>
+								<li><a href="contact.html">contact</a></li>
+							</ul><!--/.nav -->
+						</div><!-- /.navbar-collapse -->
+					</div><!--/.container-->
+				</nav><!--/nav-->
+				<!-- End Navigation -->
+			</div><!--/.header-area-->
+			<div class="clearfix"></div>
+
+		</div><!-- /.top-area-->
+		<!-- top-area End -->
+		<section id="recherche" class="recherche"></section>
+		<div class="container">
+			<div class="welcome-hero-txt">
+				<h2>Achetez vos pièces auto a des prix raisonnables</h2>
+				<p>
+					Nous proposons des pièces de toutes marques et de tous types
+				</p>
+				<button class="welcome-btn" onclick="window.location.href='contact.html'">contactez-nous</button>
+			</div>
+		</div>
+
+
+		<div class="container">
+			<form  method="post" action="rechercher.php">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="model-search-content">
+							<div class="row">
+								<div class="col-md-offset-1 col-md-3 col-sm-12">
+									<div class="single-model-search">
+										<h2>Marque</h2>
+										<div class="model-select-icon">
+											<select class="form-control" id="marque" name="marque"
+												onchange="afficherModeles()">
+
+												<option selected>Marque</option>
+												<option value="Audi">Audi</option>
+												<option value="BMW">BMW</option>
+												<option value="Citroen">Citroen</option>
+												<option value="Dacia">Dacia</option>
+												<option value="Fiat">Fiat</option>
+												<option value="Ford">Ford</option>
+												<option value="Honda">Honda</option>
+												<option value="Mercedes">Mercedes</option>
+												<option value="Peugeot">Peugeot</option>
+												<option value="Renault">Renault</option>
+												<option value="Volkswagen">Volkswagen</option>
+
+											</select><!-- /.select-->
+										</div><!-- /.model-select-icon -->
+									</div>
+									<div class="single-model-search">
+										<h2>Année</h2>
+										<div class="model-select-icon">
+											<select class="form-control">
+
+												<option value="default">Année</option><!-- /.option-->
+												<option value="2000">2000</option><!-- /.option-->
+												<option value="2001">2001</option><!-- /.option-->
+												<option value="2002">2002</option><!-- /.option-->
+												<option value="2003">2003</option><!-- /.option-->
+												<option value="2004">2004</option><!-- /.option-->
+												<option value="2005">2005</option><!-- /.option-->
+												<option value="2006">2006</option><!-- /.option-->
+												<option value="2007">2007</option><!-- /.option-->
+												<option value="2008">2008</option><!-- /.option-->
+												<option value="2009">2009</option><!-- /.option-->
+												<option value="2009">2009</option><!-- /.option-->
+												<option value="2011">2011</option><!-- /.option-->
+												<option value="2012">2012</option><!-- /.option-->
+												<option value="2013">2013</option><!-- /.option-->
+
+											</select>
+										</div><!-- /.model-select-icon -->
+									</div>
+								</div>
+								<div class="col-md-offset-1 col-md-3 col-sm-12">
+									<div class="single-model-search">
+										<h2>Modèle</h2>
+										<div class="model-select-icon">
+											<select class="form-control" id="modele" name="modele"></select>
+										</div><!-- /.model-select-icon -->
+									</div>
+									<div class="single-model-search">
+										<h2> Catégorie de Pièce</h2>
+										<div class="model-select-icon">
+											<select class="form-control" id="piece" name="categorie">
+												<option selected>Categorie de pièce</option>
+												<option value="Filtres">Filtres</option>
+												<option value="Freinage">Freinage</option>
+												<option value="Allumage">Allumage</option>
+												<option value="Suspension">Suspension</option>
+												<option value="Embrayage">Embrayage</option>
+												<option value="Moteur">Moteur</option>
+												<option value="Eclairage">Eclairage</option>
+												<option value="Démarrage électrique">Démarrage électrique</option>
+												<option value="Capteurs et sondes">Capteurs et sondes</option>
+												<option value="Cardan et transmission">Cardan et transmission</option>
+												<option value="Climatisation">Climatisation</option>
+											</select>
+										</div><!-- /.model-select-icon -->
+									</div>
+								</div>
+								<div class="col-md-2 col-sm-12">
+									<div class="single-model-search text-center">
+										<input type="submit" class="welcome-btn model-search-btn" id="rechercher"
+											name="rechercher" value="Rechercher">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</section>
+
+	<section id="Produits" class="featured-cars">
+		<form method="POST" action="recherche.php">
+			<div class="container">
+				<div class="section-header">
+
+				</div>
+				<div class="featured-cars-content">
+					<div class="row">
+						<div class="col-lg-3 col-md-4 col-sm-6">
+							<div class="single-featured-cars">
+								<div>
+									<div class="featured-cars-img">
+										<img src="assets/images/featured-cars/filtre.PNG" alt="cars">
+									</div>
+									<div class="text-center">
+										<p><a href="index.html">Filtre</a></p>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-2 col-sm-6">
+							<div class="single-featured-cars">
+								<div>
+									<div class="featured-cars-img">
+										<img src="assets/images/featured-cars/freinage.PNG" alt="cars">
+									</div>
+									<div class="text-center">
+										<p><a href="index.html">Freinage</a></p>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-4 col-sm-6">
+							<div class="single-featured-cars">
+								<div>
+									<div class="featured-cars-img">
+										<img src="assets/images/featured-cars/allumage.PNG" alt="cars">
+									</div>
+									<div class="text-center">
+										<p><a href="index.html">Allumage</a></p>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-4 col-sm-6">
+							<div class="single-featured-cars">
+								<div>
+									<div class="featured-cars-img">
+										<img src="assets/images/featured-cars/suspension.PNG" alt="cars">
+									</div>
+									<div class="text-center">
+										<p><a href="index.html">Suspension</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-3 col-md-4 col-sm-6">
+							<div class="single-featured-cars">
+								<div>
+									<div class="featured-cars-img">
+										<img src="assets/images/featured-cars/embrayage.PNG" alt="cars">
+									</div>
+									<div class="text-center">
+										<p><a href="index.html">Embrayage</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-4 col-sm-6">
+							<div class="single-featured-cars">
+								<div>
+									<div class="featured-cars-img">
+										<img src="assets/images/featured-cars/moteur.PNG" alt="cars">
+									</div>
+									<div class="text-center">
+										<p><a href="index.html">Moteur</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-4 col-sm-6">
+							<div class="single-featured-cars">
+								<div>
+									<div class="featured-cars-img">
+										<img src="assets/images/featured-cars/eclairage.PNG" alt="cars">
+									</div>
+									<div class="text-center">
+										<p><a href="index.html">Eclairage</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-4 col-sm-6">
+							<div class="single-featured-cars">
+								<div>
+									<div class="featured-cars-img">
+										<img src="assets/images/featured-cars/demarageElectrique.PNG" alt="cars">
+									</div>
+									<div class="text-center">
+										<p><a href="index.html">Démarage Electrique</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-3 col-md-4 col-sm-6">
+							<div class="single-featured-cars">
+								<div>
+									<div class="featured-cars-img">
+										<img src="assets/images/featured-cars/capteur et sonde.PNG" alt="cars">
+									</div>
+									<div class="text-center">
+										<p><a href="index.html">Capteur et Sonde</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-4 col-sm-6">
+							<div class="single-featured-cars">
+								<div>
+									<div class="featured-cars-img">
+										<img src="assets/images/featured-cars/cardan et transmission.PNG" alt="cars">
+									</div>
+									<div class="text-center">
+										<p><a href="index.html">Cardan et transmission</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-4 col-sm-6">
+							<div class="single-featured-cars">
+								<div>
+									<div class="featured-cars-img">
+										<img src="assets/images/featured-cars/climatisation.PNG" alt="cars">
+									</div>
+									<div class="text-center">
+										<p><a href="index.html">Climatisation</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+
+	</section>
+
+
+	<!--brand strat -->
+	<section id="brand" class="brand">
+		<div class="container">
+			<div class="brand-area">
+				<div class="owl-carousel owl-theme brand-item">
+					<div class="item">
+						<a href="#">
+							<img src="assets/images/brand/br1.png" alt="brand-image" />
+						</a>
+					</div><!--/.item-->
+					<div class="item">
+						<a href="#">
+							<img src="assets/images/brand/br2.png" alt="brand-image" />
+						</a>
+					</div><!--/.item-->
+					<div class="item">
+						<a href="#">
+							<img src="assets/images/brand/br3.png" alt="brand-image" />
+						</a>
+					</div><!--/.item-->
+					<div class="item">
+						<a href="#">
+							<img src="assets/images/brand/br4.png" alt="brand-image" />
+						</a>
+					</div><!--/.item-->
+
+					<div class="item">
+						<a href="#">
+							<img src="assets/images/brand/br5.png" alt="brand-image" />
+						</a>
+					</div><!--/.item-->
+
+					<div class="item">
+						<a href="#">
+							<img src="assets/images/brand/br6.png" alt="brand-image" />
+						</a>
+					</div><!--/.item-->
+				</div><!--/.owl-carousel-->
+			</div><!--/.clients-area-->
+
+		</div><!--/.container-->
+
+	</section><!--/brand-->
+	<!--brand end -->
+
+	<!--blog start -->
+	<section id="blog" class="blog"></section><!--/.blog-->
+	<!--blog end -->
+
+	<!--contact start-->
+	<footer id="contact" class="contact">
+		<div class="container">
+			<div class="footer-top">
+				<div class="row">
+					<div class="col-md-3 col-sm-6">
+						<div class="single-footer-widget">
+							<div class="footer-logo">
+								<a href="index.html">AutoShop</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-2 col-sm-6">
+						<div class="single-footer-widget">
+							<h2>Ranimjrad0@gmail.com</h2>
+						</div>
+					</div>
+					<div class="col-md-3 col-xs-12">
+						<div class="single-footer-widget">
+							<h2>53 132 382</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-copyright">
+				<div class="row">
+					<div class="col-sm-6">
+						<p>
+							&copy; copyright.designed and developed by <a
+								href="https://www.themesine.com/">themesine</a>.
+						</p><!--/p-->
+					</div>
+					<div class="col-sm-6">
+						<div class="footer-social">
+							<a href="#"><i class="fa fa-facebook"></i></a>
+							<a href="#"><i class="fa fa-instagram"></i></a>
+							<a href="#"><i class="fa fa-linkedin"></i></a>
+							<a href="#"><i class="fa fa-pinterest-p"></i></a>
+							<a href="#"><i class="fa fa-behance"></i></a>
+						</div>
+					</div>
+				</div>
+			</div><!--/.footer-copyright-->
+		</div><!--/.container-->
+
+		<div id="scroll-Top">
+			<div class="return-to-top">
+				<i class="fa fa-angle-up " id="scroll-top" data-toggle="tooltip" data-placement="top" title=""
+					data-original-title="Back to Top" aria-hidden="true"></i>
+			</div>
+
+		</div><!--/.scroll-Top-->
+
+	</footer><!--/.contact-->
+	<!--contact end-->
+
+
+
+	<!-- Include all js compiled plugins (below), or include individual files as needed -->
+
+	<script src="assets/js/jquery.js"></script>
+
+	<!--modernizr.min.js-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+	<!--bootstrap.min.js-->
+	<script src="assets/js/bootstrap.min.js"></script>
+
+	<!-- bootsnav js -->
+	<script src="assets/js/bootsnav.js"></script>
+
+	<!--owl.carousel.js-->
+	<script src="assets/js/owl.carousel.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+	<!--Custom JS-->
+	<script src="assets/js/custom.js"></script>
+	<script>
+		var modelesParMarque = {
+			Audi: ["A1", "A2", "A3", "A4", "A5", "A6", "A7", "A8", "Q2", "Q3", "Q4", "Q5", "Q7", "Q8", "QUATTRO", "R8", "TT", "V8"],
+			BMW: ["SERIE 1", "SERIE 3", "SERIE 5", "X3", "X5"],
+			Citroen: ["C5","DS","DS3","JUMPER","JUMPY","MEHARI","XM"],
+			Dacia: ["LOGAN","LODGY","NOVA","PICK","SANDERO","SOLENZA","SPRING","DUSTER"],
+			Fiat:["500","600","850","ARGO","BRAVA","BARCHETTA","BRAVO"],
+			Ford:["B-MAX","BELINA","C-MAX","CORCEL","CORTINA","EVREST","FIESTA","FOCUS","GRANADA","PUMA"],
+			Honda:["ACCORD","ACTY","ADV","BEAT","CAPA","CITY","CR","DOMANI","FORZA"],
+			Mercedes: ["CLASSE C", "CLASSE E", "GLC","AMG","CLA","CLASSE A","CLASSE G","CLASSE S","GLS","CLASSE B"],
+			Peugeot:["206","205","301","304","308","405","406","505","605","806"],
+			Renault:["CLIO","DUSTER","ESPACE","KANGOO","KAPTEUR","LOGAN","MASTER","MEGANE","R25","R4"],
+			Volkswagen: ["412","AMAROK","ATLAS","CADDY","CC","COCCINELLE","CORRADO","FOX","GOLF","LOAD","PASSAT","POLO"]
+		};
+
+		function afficherModeles() {
+    var marqueSelect = document.getElementById("marque");
+    var modeleSelect = document.getElementById("modele");
+    var selectedMarque = marqueSelect.value;
+
+    console.log("Selected marque:", selectedMarque);
+
+    modeleSelect.innerHTML = "";
+
+    if (selectedMarque && modelesParMarque[selectedMarque]) {
+        modelesParMarque[selectedMarque].forEach(function (modele) {
+            var option = document.createElement("option");
+            option.value = modele;
+            option.text = modele;
+            modeleSelect.appendChild(option);
+        });
+    } else {
+        console.error("No models found for selected marque or selected marque is undefined.");
+    }
+}
+
+	</script>
+
+</body>
+
+</html>
